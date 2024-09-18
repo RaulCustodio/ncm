@@ -1,0 +1,10 @@
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import accuracy_score
+from collections import Counter
+
+# Carregar os dados
+df = pd.read_csv('produtos_ncm.csv')  # Supondo que sua base esteja em um arquivo CSV
